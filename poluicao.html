@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="poluicao.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="poluicao.js"></script>
+    <title>Not a boring weather site</title>
+  </head>
+  <body id="body_poluicao"> 
+    <audio id="beep_underwater" src="Sons/underwater_sounds.mp3"></audio>
+    <div class="bg"><img src="Imagens/bg_poluicao.png" alt="" style="position:absolute;width:100%;z-index: -1;">
+      <!-- <h1 class="m-0">oladmawidnawi</h1> -->
+      <div class="container-fluid" style="position:absolute;height:100%;">
+        <div class="row">
+            <div class="col-sm-auto m-3" style="width:21%">
+                <!-- <h3 class="my-1">NOT A BORING WEATHER SITE</h3> -->
+                <a href="index.html">
+                  <img src="Imagens/title_button_poluicao.svg" alt="title" class="w-100">
+                </a>
+            </div>
+        </div>
+        <div class="row h-100">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 my-auto">
+                 
+            </div>
+            <div class="col-sm-2 my-auto">
+                    <div class="row">
+                        <a href="mudancas_climaticas.html" class="">
+                            <img src="Imagens/button1.svg" alt="Europe and Africa" class="w-100">
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="poluicao.html" class="">
+                            <img src="Imagens/button2.svg" alt="Americas" class="w-100">
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="metereologia.html" class="">
+                            <img src="Imagens/button3_teste.svg" alt="Asia and Australia" class="w-100">
+                        </a>
+                    </div>
+                    
+                
+                  
+            </div>
+        </div>
+      </div>
+    
+  </div>
+  <div class="container-fluid boder" style="position:absolute;height:100%;">
+    <div class="row">
+    </div>
+    <div class="row h-100" style="margin-top: 4%;">
+      <div class="col-sm-2 my-auto"></div>
+        <div class="col-sm-2 my-auto">
+          <a id="but1" href="#1" class="">
+            <img src="Imagens/plastic_button.svg" alt="title" class="w-100">
+          </a>
+        </div>
+        <div class="col-sm-1 my-auto"></div>
+        <div class="col-sm-2 my-auto">
+          <a id="but2" href="#1" class="">
+            <img src="Imagens/microplastic_button.svg" alt="title" class="w-100">
+          </a>
+        </div>
+        <div class="col-sm-1 my-auto"></div>
+        <div class="col-sm-2 my-auto">
+          <a id="but3" href="#1" class="">
+            <img src="Imagens/food_button.svg" alt="title" class="w-100">
+          </a>
+        </div>
+        <div class="col-sm-2 my-auto"></div>
+          <img id="pop1" src="Imagens/plastic1.png" style="position:absolute;z-index: 1;display:none;opacity: 85%;" alt="popup1" class="w-50">
+          <img id="pop2" src="Imagens/microplastics2.png" style="position:absolute;z-index: 1;margin-left: 25%;display:none;opacity: 85%;" alt="popup2" class="w-50">
+          <img id="pop3" src="Imagens/food3.png" style="position:absolute;z-index: 1;margin-left: 50%;display:none;opacity: 85%;" alt="popup3" class="w-50">
+    </div>
+  </div>
+  
+  <div class="container-fluid" style="position:absolute;height:100%;margin-top: 75%;">
+    <div class="row">
+    </div>
+    <div class="row h-100" style="margin-top: 4%;">
+      <div class="col-sm-3 my-auto"></div>
+        <div class="col-sm-2 my-auto">
+          <a id="but4" href="#1" class="">
+            <img src="Imagens/bubble4.svg" alt="title" class="w-100">
+          </a>
+        </div>
+        <div class="col-sm-7 my-auto"></div>
+        <img id="pop4" src="Imagens/plastic_information4.png" style="position:absolute;z-index: 1;margin-left: 40%;display:none;opacity: 85%;" alt="popup4" class="w-50">
+    </div>
+  </div> 
+
+  <div class="container-fluid" style="position:absolute;height:100%;margin-top: 122%;">
+    <div class="row">
+    </div>
+    <div class="row h-100" style="margin-top: 4%;">
+      <div class="col-sm-2 my-auto"></div>
+      <div class="col-sm-3 my-auto">
+        <a id="but7" href="#1" class="">
+          <img src="Imagens/bubble7.svg" alt="title" class="w-100">
+        </a>
+      </div>
+      <div class="col-sm-2 my-auto"></div>
+      <div class="col-sm-1">
+        <a id="but5" href="#1" class="">
+          <img src="Imagens/bubble5.svg" alt="title" class="w-100">
+        </a>
+      </div>
+      <div class="col-sm-2" style="margin-top: 10%;">
+        <a id="but6" href="#1" class="">
+          <img src="Imagens/bubble6.svg" alt="title" class="w-100">
+        </a>
+      </div>
+      <div class="col-sm-1 my-auto"></div>
+      <img id="pop5" src="Imagens/plastic_information5.png" style="position:absolute;z-index: 1;margin-left: 10%;margin-top: -10%;display:none;opacity: 85%;" alt="popup5" class="w-50">
+      <img id="pop6" src="Imagens/map6.png" style="position:absolute;z-index: 1;margin-top: 3%;margin-left: 35%;width:35%;display:none;opacity: 85%;" alt="popup6" class="">
+      <img id="pop7" src="Imagens/facts_info7.png" style="position:absolute;z-index: 1;margin-left: 40%;margin-top: 25%;display:none;opacity: 85%;" alt="popup7" class="w-50">
+    </div>
+  </div> 
+
+  <div class="container-fluid " style="position:absolute;height:100%;margin-top: 167%;">
+    <div class="row">
+    </div>
+    <div class="row h-100" style="margin-top: 4%;">
+      <div class="col-sm-1 my-auto"></div>
+      <div class="col-sm-5 my-auto">
+        <a id="but8" href="#1" class="">
+          <img src="Imagens/turtle_button.svg" alt="title" class="w-100">
+        </a>
+      </div>
+      <div class="col-sm-5 my-auto">
+        <a id="but9" href="#1" class="">
+          <img src="Imagens/human_button.svg" alt="title" class="w-100">
+        </a>
+      </div>
+      <div class="col-sm-1 my-auto"></div>
+      <img id="pop8" src="Imagens/harm_to_animals8.png" style="position:absolute;z-index: 1;margin-left: 0%;margin-top: 25%;opacity: 85%;display:none;" alt="popup8" class="w-50">
+      <img id="pop9" src="Imagens/humans9.png" style="position:absolute;z-index: 1;margin-left: 57%;margin-top: 37%;width:40%;opacity: 85%;display:none;" alt="popup9">
+    </div>
+  </div> 
+
+  <div class="container-fluid " style="position:absolute;height:100%;margin-top: 230%;">
+    <div class="row">
+    </div>
+    <div class="row h-100" style="margin-top: 7%;">
+      <div class="col-sm-4 my-auto"></div>
+      <div class="col-sm-4 my-auto">
+        <a id="but10" href="#1" class="">
+          <img src="Imagens/recicle_button.svg" alt="title" class="w-100">
+        </a>
+      </div>
+      <div class="col-sm-4 my-auto"></div>
+      <img id="pop10" src="Imagens/solutions10.png" style="position:absolute;z-index: 1;margin-left: 25%;margin-top: -5%;opacity: 85%;display:none;" alt="popup10" class="w-50">
+    </div>
+  </div> 
+  </body>
+</html>

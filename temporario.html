@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mudancas_climaticas.css">
+    <link rel="stylesheet" href="https://www.1001fonts.com/arcadeclassic-font.html">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="mudancas_climaticas.js"></script>
+    <title>Not a boring weather site</title>
+  </head>
+  <body style="background: url('Imagens/pls3.png') no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;"> 
+
+
+    <div class="container-fluid" style="height:90%;">
+        <div class="row">
+            <div class="col-sm-auto  m-3">
+                
+                <a href="index.html">
+                  <img src="Imagens/title_button_climaticas.svg" alt="title" class="w-100">
+                </a>
+            </div>
+        </div>
+        
+        <div class="row h-100">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 my-auto">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                   
+                
+                    
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <a href="#" id="europe_africa">
+                          <img src="Imagens/europe_africa_climaticas.svg" alt="Europe and Africa" class="w-100">
+                        </a>
+                      </div>
+                
+                      <div class="item">
+                        <a href="#" id="americas">
+                          <img src="Imagens/americas_climaticas.svg" alt="Americas" class="w-100">
+                        </a>
+                      </div>
+                    
+                      <div class="item">
+                        <a href="#" id="asia_australia">
+                          <img src="Imagens/asia_australia_climaticas.svg" alt="Asia and Australia" class="w-100">
+                        </a>
+                      </div>
+                    </div>
+                
+                   
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fas fa-chevron-left fa-2x" aria-hidden="left" ></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fas fa-chevron-right fa-2x " aria-hidden="right"></i>
+                    </a>
+                </div>   
+            </div>
+            <div class="col-sm-2 my-auto">
+                    <div class="row">
+                        <a href="mudancas_climaticas.html" class="">
+                            <img src="Imagens/button1.svg" alt="Europe and Africa" class="w-100">
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="poluicao.html" class="">
+                            <img src="Imagens/button2.svg" alt="Americas" class="w-100">
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="metereologia.html" class="">
+                            <img src="Imagens/button3_teste.svg" alt="Asia and Australia" class="w-100">
+                        </a>
+                    </div>   
+            </div>
+            <div class="row">
+              <div id="balao_europe_africa" class="info" style="font-family: myFirstFont;">
+                
+                <div class="modal fade" id="ModalEuropeAfrica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered ml-5" role="document">
+                    <div class="modal-content border-4" style="background-color: #000436;border-color: yellow;">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-warning" id="exampleModalLongTitle">Europe and Africa</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span class="text-white" aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body" style="font-size: large;">
+                        <div class="row">
+                            <div class="col-lg-5">
+                             <img src="Imagens/KENYA.svg" alt="placeholder" style="height: 25vh;" class="w-100">
+                            </div>
+                            <div class="col-lg-7">
+                              
+                              <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+    
+                                
+                                <div class="card border" style="background-color: #000436;border-color: white;">
+    
+                                 
+                                  <div class="card-header" role="tab" id="headingOne1">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="false"
+                                      aria-controls="collapseOne1">
+                                      <h4 class="mb-0 text-warning">
+                                        Kenya <i class="fas fa-angle-down rotate-icon"></i>
+                                      </h4>
+                                    </a>
+                                  </div>
+    
+                                 
+                                  <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1"
+                                    data-parent="#accordionEx">
+                                    <div class="card-body text-white">
+                                      Republic of Kenya is a country in Eastern Africa whose a million people of it’s population was left on the brink of famine. Rainfall is erratic which causes more and longer droughts. 
+
+The global warming highlights the hunger crisis, Kenya is getting drier and hotter causing more than 650,000 children under age 5 severely malnourished. The severe heat and lack of rain makes food production impossible, the plants and tree’s seeds are dry and the animals thiner.
+
+12 million people rely on food aid. 
+
+                                    </div>
+                                  </div>
+    
+                                </div>
+                                
+    
+                               
+                                <div class="card border" style="background-color: #000436;border-color: white;">
+    
+                                 
+                                  <div class="card-header" role="tab" id="headingTwo2">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                                      aria-expanded="false" aria-controls="collapseTwo2">
+                                      <h4 class="mb-0 text-warning">
+                                        Portugal <i class="fas fa-angle-down rotate-icon"></i>
+                                      </h4>
+                                    </a>
+                                  </div>
+    
+                                 
+                                  <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                                    data-parent="#accordionEx">
+                                    <div class="card-body text-white">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                      squid. 3
+                                      wolf moon officia aute,
+                                      non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                    </div>
+                                  </div>
+    
+                                </div>
+                                
+    
+                                
+                                <div class="card mb-4 border" style="background-color: #000436;border-color: white;">
+    
+                                 
+                                  <div class="card-header" role="tab" id="headingThree3">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                                      aria-expanded="false" aria-controls="collapseThree3">
+                                      <h4 class="mb-0 text-warning">
+                                        Germany <i class="fas fa-angle-down rotate-icon"></i>
+                                      </h4>
+                                    </a>
+                                  </div>
+    
+                                  
+                                  <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                                    data-parent="#accordionEx">
+                                    <div class="card-body text-white">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                      squid. 3
+                                      wolf moon officia aute,
+                                      non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                    </div>
+                                  </div>
+    
+                                </div>
+                              </div>
+                              </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger w-25" data-dismiss="modal">Noice!</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div id="balao_americas" class="info" style="font-family: myFirstFont;">
+                <div class="modal fade" id="ModalAmericas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered ml-5" role="document">
+                    <div class="modal-content border-4" style="background-color: #000436;border-color: yellow;">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-warning" id="exampleModalLongTitle">Americas</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span class="text-white" aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body" style="font-size: large;">
+                        <div class="row">
+                            <div class="col-lg-5">
+                             <img src="Imagens/AMAZON.svg" alt="placeholder" style="height: 25vh;" class="img-fluid">
+                            </div>
+                            <div class="col-lg-7">
+                              
+                              <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+    
+                                
+                                <div class="card border" style="background-color: #000436;border-color: white;">
+    
+                                 
+                                  <div class="card-header" role="tab" id="headingFour4">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4" aria-expanded="false"
+                                      aria-controls="collapseFour4">
+                                      <h4 class="mb-0 text-warning">
+                                        Amazon, Brazil <i class="fas fa-angle-down rotate-icon"></i>
+                                      </h4>
+                                    </a>
+                                  </div>
+                                  <audio id="beep_amazon" src="Sons/amazon.mp3"></audio>
+    
+                                 
+                                  <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4"
+                                    data-parent="#accordionEx">
+                                    <div class="card-body text-white">
+                                      The Amazon rainforest is a most broadleaf tropical rainforest in the Amazon biome that covers most of the Amazon basin of South America; represents over half of the planet’s remaining rainforests.
+
+For most of human history, deforestation in the Amazon was primarily the product of subsistence farmers who down trees for the production of their families and local consumption. However, the level of deforestation has increased due to industrial activities and large-scale agriculture.
+
+Desforestation in the Brazilian Amazon rose more that 88% in June 2019 caused by the 72,843 fires from that same year.
+
+Over the last decade, the biggest tropical forest in the world released almost 20% carbon dioxide than the one that absorbed; it’s becoming the biggest source of CO2 instead of absorbing it since the gas emissions increased 50% in the last 50 years. Regardless of these higher resgistrations, the forests were responsible for absorbing 30% of CO2.
+
+These same higher levels have proven that degradation is causing more emissions than deforestation whose increase came from the fires of 2019.
+
+These extreme events are putting the house of 45 thousand plants and animals species in danger; the biodiversity is disappearing with this forest.
+
+                                    </div>
+                                  </div>
+    
+                                </div>
+                                
+    
+                               
+                                <div class="card border" style="background-color: #000436;border-color: white;">
+    
+                                 
+                                  <div class="card-header" role="tab" id="headingFive5">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFive5"
+                                      aria-expanded="false" aria-controls="collapseFive5">
+                                      <h4 class="mb-0 text-warning">
+                                        Artic <i class="fas fa-angle-down rotate-icon"></i>
+                                      </h4>
+                                    </a>
+                                  </div>
+                                  <audio id="beep_artic" src="Sons/artic.mp3"></audio>
+    
+                                 
+                                  <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5"
+                                    data-parent="#accordionEx">
+                                    <div class="card-body text-white">
+                                      The Artic is a polar region located at the northernmost part of Earth and it is seen as a leading indicator of global warming.
+
+This crisis affects the whole planet with temperatures getting higher, even in Artic with the loss of sea ice and melting Greenland ice sheet. A small increase in temperature can lead to greater warming over time, making the polar regions the most sensitive areas to climate change on Earth.
+
+If Artic ice melts, sea level would rise 70 meters, covering all the coastal cities and land area would shrink significantly.
+
+                                    </div>
+                                  </div>
+    
+                                </div>
+                                
+    
+                                
+                                <div class="card mb-4 border" style="background-color: #000436;border-color: white;">
+    
+                                 
+                                  <div class="card-header" role="tab" id="headingSix6">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseSix6"
+                                      aria-expanded="false" aria-controls="collapseSix6">
+                                      <h4 class="mb-0 text-warning">
+                                        Canada <i class="fas fa-angle-down rotate-icon"></i>
+                                      </h4>
+                                    </a>
+                                  </div>
+    
+                                  
+                                  <div id="collapseSix6" class="collapse" role="tabpanel" aria-labelledby="headingSix6"
+                                    data-parent="#accordionEx">
+                                    <div class="card-body text-white">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                      squid. 3
+                                      wolf moon officia aute,
+                                      non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                    </div>
+                                  </div>
+    
+                                </div>
+                              </div>
+                              </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger w-25" data-dismiss="modal">Noice!</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div id="balao_asia_australia" class="info" style="font-family: myFirstFont;">
+                <div class="modal fade" id="ModalAsiaAustralia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered ml-5" role="document">
+                    <div class="modal-content border-4" style="background-color: #000436;border-color: yellow;">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-warning" id="exampleModalLongTitle">Asia and Oceania</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span class="text-white" aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body" style="font-size: large;">
+                        <div class="row">
+                            <div class="col-lg-5">
+                            <img src="Imagens/AUSTRALIA.svg" alt="placeholder" style="height: 25vh;" class="img-fluid">
+                            </div>
+                            <div class="col-lg-7">
+                              
+                              <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+    
+                                
+                                <div class="card border" style="background-color: #000436;border-color: white;">
+    
+                                
+                                  <div class="card-header" role="tab" id="headingSeven7">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseSeven7" aria-expanded="false"
+                                      aria-controls="collapseSeven7">
+                                      <h4 class="mb-0 text-warning">
+                                        Japan <i class="fas fa-angle-down rotate-icon"></i>
+                                      </h4>
+                                    </a>
+                                  </div>
+    
+                                
+                                  <div id="collapseSeven7" class="collapse" role="tabpanel" aria-labelledby="headingSeven7"
+                                    data-parent="#accordionEx">
+                                    <div class="card-body text-white">
+                                      Japan is an island country in East Asia, located in the northwest Pacific Ocean; it’s one of the most densely populated and urbanized countries. 
+                                      This eleventh-most populous country is the most threatened country in the world by climate change. It’s biggest effect is the extreme heat waves; the anual temperature has increased 1.0ºC during the last century and it keeps getting warmer. Japan has been experiencing more heat, surpassing 35ºC and less extreme cold. 
+                                      
+                                      This climate crisis’s consequence has changed the levels of snow and precipitation. While it’s levels didn’t change during 20th century, it’s variability like the timing and quantity have been changing leading to unexpected rain patterns which impairs agriculture’s patterns and the management of water resources; Japan had 22 hurricanes with loss of lives and material goods in just one year, 2004.
+                                      
+                                      Weather events themselves were behind 1,282 deaths on the island, 1-01 per 100.000 inhabitants and caused economic losses of 35,839 million dollars.
+                                      
+                                      While the temperatures have increased in the last 100 years, the ocean levels have been registered higher and higher as well.
+                                      
+                                      These heavy rains and heat’s consequences cause a faster aging and more infectuous diseases putting public health at risk.
+                                      
+                                    </div>
+                                  </div>
+    
+                                </div>
+                                
+    
+                              
+                                <div class="card border" style="background-color: #000436;border-color: white;">
+    
+                                
+                                  <div class="card-header" role="tab" id="headingEight8">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseEight8"
+                                      aria-expanded="false" aria-controls="collapseEight8">
+                                      <h4 class="mb-0 text-warning">
+                                        The Philippines <i class="fas fa-angle-down rotate-icon"></i>
+                                      </h4>
+                                    </a>
+                                  </div>
+                                  <audio id="beep_philippines" src="Sons/philippines.mp3"></audio>
+                                
+                                  <div id="collapseEight8" class="collapse" role="tabpanel" aria-labelledby="headingEight8"
+                                    data-parent="#accordionEx">
+                                    <div class="card-body text-white">
+                                      The Republic of Philippines is an archipelagic country in Southeast Asia, one of the most typhoon impacted places. 
+
+Consisting in 7,640 islands, it’s sea surface temperatures are getting higher as well as sea temperatures are, factors that lead to stronger typhoons while the sea level rise aggravates these extreme weather events from which The Philippines’s rapidly growing population is vulnerable to.
+
+In 2020, this country island suffered 3 major storms in less than a month leaving thousands of people homeless and serious floods increasing the risk of landslides as well as rough seas.  
+
+The Filipino people bear low responsability for causing climate change and are invaded by 20 storms every year.
+
+                                    </div>
+                                  </div>
+    
+                                </div>
+                                
+    
+                                
+                                <div class="card mb-4 border" style="background-color: #000436;border-color: white;">
+    
+                                
+                                  <div class="card-header" role="tab" id="headingNine9">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseNine9"
+                                      aria-expanded="false" aria-controls="collapseNine9">
+                                      <h4 class="mb-0 text-warning">
+                                        Australia <i class="fas fa-angle-down rotate-icon"></i>
+                                      </h4>
+                                    </a>
+                                  </div>
+    
+                                  
+                                  <div id="collapseNine9" class="collapse" role="tabpanel" aria-labelledby="headingNine9"
+                                    data-parent="#accordionEx">
+                                    <div class="card-body text-white">
+                                      Officially Commonwealth of Australia, Australia is a sovereign country comprising the mainland of the Australian continent, the island of Tasmania and numerous smaller islands. The largest country in Oceania faces a major issue: extinction of several species of biodiversity.
+Australia faces intense droughts and bushfires from the climate change as the temperatures get warmer, the polution increases, destroying the habitat of these species that are going extinct.
+However, the main factor is the increased rate of population growth. This has led to habitat change through land clearing and urbanisation, hunting and exploitation for human consume and use.
+
+In the beginning of 2021, the Australian government has officialy acknowledged the extinction of 13 endemic species, lifting the total number of mammals known to have died out to 34. The country has lost more than 50 animal and 60 plant species in the past 200 years and record the highest rate of mammalian extinction in the world over that period.
+
+                                    </div>
+                                  </div>
+                                  <audio id="beep_australia" src="Sons/animal_sounds.mp3"></audio>
+                                  
+
+    
+                                </div>
+                              </div>
+                              </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger w-25" data-dismiss="modal">Noice!</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </body>
+ 
+</html>

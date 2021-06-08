@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="metereologia.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="metereologia.js"></script>
+    <title>Not a boring weather site</title>
+  </head>
+
+  <script>
+  $(document).ready(function(){
+
+    $("#search_submit").click(function(){
+        console.log("entrei")
+        var value = $('#search_input').val();
+        if (value==="Cairo" || value==="cairo") {
+          $("#lisbon_container").hide();
+          $("#cairo_container").show();
+
+        }else if (value==="Lisbon" || value==="lisbon") {
+          $("#cairo_container").hide();
+          $("#lisbon_container").show();
+        }else{
+          alert("Essa opção não existe.(As opções são 'Lisboa' ou 'Cairo'");
+        }
+    }); 
+  
+  });
+  </script>
+
+  <body> 
+    <div class="bg"><img src="Imagens/bg_weather.png" alt="" style="position:absolute;width:100%;z-index: -1;">
+      <div class="container-fluid" style="position:absolute;height:100%;">
+        <div class="row">
+          <div class="col-sm-auto  m-3">
+            <!-- <h3 class="my-1">NOT A BORING WEATHER SITE</h3> -->
+            <a href="index.html">
+              <img src="Imagens/title_button.png" alt="title" class="w-100">
+            </a>
+        </div>
+        </div>
+        <div class="row h-100">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 my-auto">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <!-- <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol> -->
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <embed src="Imagens/planet_europe_africa.svg" alt="Europe and Africa" class="w-100">
+                  </div>
+            
+                  <div class="item">
+                    <embed src="Imagens/planet_americas.svg" alt="Americas" class="w-100">
+                  </div>
+                
+                  <div class="item">
+                    <embed src="Imagens/planet_asia_australia.svg" alt="Asia and Australia" class="w-100">
+                  </div>
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <i class="fas fa-chevron-left fa-2x" aria-hidden="left" ></i>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <i class="fas fa-chevron-right fa-2x " aria-hidden="right"></i>
+                </a>
+            </div>  
+            <div class="row mx-auto">
+              <div class="col-sm-12" style="margin-left: 28%;">
+                  <div id="inputSearch" class="col-sm-5">
+                        <input type="search" id="search_input" class="form-control text-black" />
+                  </div>
+                  <div class="col-sm-7" style="margin-left: -2%;">
+                    <button type="button" id="search_submit" class="btn btn-primary">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+              </div>
+            </div> 
+            </div>
+            <div class="col-sm-2 my-auto">
+                    <div class="row">
+                        <a href="mudancas_climaticas.html" class="">
+                            <img src="Imagens/button1.svg" alt="Europe and Africa" class="w-100">
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="poluicao.html" class="">
+                            <img src="Imagens/button2.svg" alt="Americas" class="w-100">
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="metereologia.html" class="">
+                            <img src="Imagens/button3_teste.svg" alt="Asia and Australia" class="w-100">
+                        </a>
+                    </div> 
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="position:absolute;height:100%;">
+      <div class="row">
+      </div>
+      <div class="row h-100">
+        <div class="col-sm-1"></div>
+          <div class="col-sm-10" style="margin-top: 7%;">
+
+            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+              <div class="MultiCarousel-inner">
+                  <div class="item">
+                      <div class="pad15">
+                        <a href="#1" id="temposeco">
+                          <img src="Imagens/temposeco.svg" alt="" class="w-100">
+                        </a>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                        <audio id="beep_partly_cloudy" src="Sons/cloudy.mp3"></audio>
+                        <a href="#1" id="partly_cloudy">
+                          <img src="Imagens/partly_cloudy.svg" alt="" class="w-100">
+                        </a>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                        <audio id="beep_chuva" src="Sons/Chuva.mp3"></audio>
+                        <a href="#1" id="chuvaaguaceiros">
+                          <img src="Imagens/chuvaaguaceiros.svg" alt="" class="w-100">
+                         </a>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                        <audio id="beep_neve" src="Sons/Neve.mp3"></audio>
+                        <a href="#1" id="neve">
+                          <img src="Imagens/neve.svg" alt="" class="w-100">
+                        </a>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                        <audio id="beep_trovao" src="Sons/Trovão.mp3"></audio>
+                        <a href="#1" id="trovoada">
+                          <img src="Imagens/trovoada.svg" alt="" class="w-100">
+                        </a>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                        <audio id="beep_ceulimpo" src="Sons/Dia solarengo.mp3"></audio>
+                        <a href="#1" id="ceulimpo">
+                          <img src="Imagens/ceulimpo.svg" alt="" class="w-100">
+                        </a>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                        <audio id="beep_vento" src="Sons/Vento.mp3"></audio>
+                        <a href="#1" id="ventoso">
+                          <img src="Imagens/ventoso.svg" alt="" class="w-100">
+                        </a>
+                      </div>
+                  </div>
+                  <div class="item">
+                    <div class="pad15">
+                      <audio id="beep_ceupouconoblado" src="Sons/Chuva leve.mp3"></audio>
+                      <a href="#1" id="ceupouconoblado">
+                        <img src="Imagens/ceupouconoblado.svg" alt="" class="w-100">
+                      </a>
+                    </div>
+                </div>
+              </div>
+              <button class="btn btn-primary leftLst"><</button>
+              <button class="btn btn-primary rightLst">></button>
+          </div>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+      </div>
+            
+      <div id = "lisbon_container">
+        <div class="container-fluid" style="position:absolute;height:100%;margin-top: 40%;">
+          <div class="row">
+          </div>
+          <div class="row h-100">
+            <div class="col-sm-3 "></div>
+            <div class="col-sm-6" style="margin-top: 15%;">
+              <img src="Imagens/Lisboa.svg" alt="Lisbon" class="w-100">
+            </div>
+            <div class="col-sm-3 "></div>
+          </div>
+        </div>
+
+        <div class="container-fluid" style="position:absolute;height:100%;margin-top: 70%;">
+          <div class="row">
+          </div>
+          <div class="row h-100">
+            <div class="col-sm-4 "></div>
+            <div class="col-sm-4" style="margin-top: 20%;">
+              <img src="Imagens/lisbon_baloon.svg" alt="Lisbon" class="w-100">
+            </div>
+            <div class="col-sm-4 "></div>
+          </div>
+        </div>
+      </div>
+
+      <div id = "cairo_container" style="display:none">
+        <div class="container-fluid" style="position:absolute;height:100%;margin-top: 40%;">
+          <div class="row">
+          </div>
+          <div class="row h-100">
+            <div class="col-sm-3 "></div>
+            <div class="col-sm-6" style="margin-top: 15%;">
+              <img src="Imagens/Cairo.svg" alt="Lisbon" class="w-100">
+            </div>
+            <div class="col-sm-3 "></div>
+          </div>
+        </div>
+
+        <div class="container-fluid" style="position:absolute;height:100%;margin-top: 70%;">
+          <div class="row">
+          </div>
+          <div class="row h-100">
+            <div class="col-sm-4 "></div>
+            <div class="col-sm-4" style="margin-top: 20%;">
+              <img src="Imagens/cairo_baloon.svg" alt="Cairo" class="w-100">
+            </div>
+            <div class="col-sm-4 "></div>
+          </div>
+        </div>
+      </div>
+    
+  </body>
+</html>

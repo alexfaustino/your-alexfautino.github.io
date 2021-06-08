@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+  }
+
+@font-face{
+  font-family: myFirstFont;
+  src: url('arcadeclassic/ARCADECLASSIC.TTF');
+}
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: 50vh;
+    overflow-y: auto;
+} 
+
+body.modal-open {
+  overflow: visible;
+}
+
+
